@@ -56,5 +56,7 @@
     Run the schema setup: Import schema.sql into your MySQL instance.
 
     Run the migration: Open migrate_data.ipynb to execute the ETL pipeline.
-
-    I learned how to handle PII (Personally Identifiable Information), why you chose VARCHAR over INT for phone numbers, and how to balanced database performance vs. data integrity. 
+   
+    Note on Data Privacy: The raw dataset used for this project contained 1M+ rows of real-world logistics data.
+    To comply with data privacy standards and PII protection,
+    the notebooks in this repository are demonstrated using a synthetic 'dummy' dataset that mirrors the original structure and anomalies.
