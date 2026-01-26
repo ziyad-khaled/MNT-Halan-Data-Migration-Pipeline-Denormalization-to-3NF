@@ -2,13 +2,13 @@
 
 1. Project Overview
 
-A high-performance ETL and Database Design project transforming 1M+ rows of messy B2C logistics data into a normalized MySQL schema. Optimized ingestion with Python/SQLAlchemy, resolved complex Arabic encoding (utf8mb4), and implemented a 3NF ERD to handle unique account-profile relationships.
+    A high-performance ETL and Database Design project transforming 1M+ rows of messy B2C logistics data into a normalized MySQL schema. Optimized ingestion with Python/SQLAlchemy, resolved complex Arabic encoding (utf8mb4), and implemented a 3NF ERD to handle unique account-profile relationships.
 
 2. The Project Journey: Challenges & Solutions
 
-Challenge A: The Encoding Crisis (Arabic Text Support)
+    Challenge A: The Encoding Crisis (Arabic Text Support)
 
-The Problem: During the Python ingestion phase (SQLAlchemy), Arabic text was being corrupted or displayed as garbled characters (Mojibake).
+      The Problem: During the Python ingestion phase (SQLAlchemy), Arabic text was being corrupted or displayed as garbled characters (Mojibake).
 
 The Insight: I discovered that while utf8 is standard, MySQL’s utf8mb4_0900_ai_ci is the superior collation for modern Arabic support. SQLAlchemy's default often creates a mismatch.
 
