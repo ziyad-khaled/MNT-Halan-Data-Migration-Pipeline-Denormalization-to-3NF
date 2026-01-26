@@ -1,11 +1,15 @@
 # MNT-Halan-Data-Migration-Pipeline-Denormalization-to-3NF
 
 1. Project Overview
+
 A high-performance ETL and Database Design project transforming 1M+ rows of messy B2C logistics data into a normalized MySQL schema. Optimized ingestion with Python/SQLAlchemy, resolved complex Arabic encoding (utf8mb4), and implemented a 3NF ERD to handle unique account-profile relationships.
 
 2. The Project Journey: Challenges & Solutions
+
 Challenge A: The Encoding Crisis (Arabic Text Support)
+
 The Problem: During the Python ingestion phase (SQLAlchemy), Arabic text was being corrupted or displayed as garbled characters (Mojibake).
+
 The Insight: I discovered that while utf8 is standard, MySQL’s utf8mb4_0900_ai_ci is the superior collation for modern Arabic support. SQLAlchemy's default often creates a mismatch.
 The Solution: I standardized the entire database and connection strings to utf8mb4, ensuring full data integrity for names and addresses in Arabic.
 
@@ -27,9 +31,10 @@ The Solution: 1. Implemented B-Tree Indexing on all foreign key columns. 2. Used
 Result: Reduced migration time to under 5 minutes.
 
 3. Data Architecture (ERD)
+![Database ERD](./intial ERD.png)
 ![Database ERD](./Final_ERD.png)
 
-4. How to Use This Repository
+5. How to Use This Repository
 Prerequisites:
 
 Python 3.x
