@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+pymysql
+openpyxl
+mysql-connector-python
+ipython-sql
