@@ -35,7 +35,7 @@
 
 3. Data Architecture (ERD)
 
-    ![Database ERD](./Final_ERD.png)
+    ![Database ERD](./images/Final_ERD.png)
 
 5. How to Use This Repository
 
