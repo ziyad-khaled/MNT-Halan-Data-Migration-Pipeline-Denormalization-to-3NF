@@ -6,9 +6,7 @@ A high-performance ETL and Database Design project transforming 1M+ rows of mess
 2. The Project Journey: Challenges & Solutions
 Challenge A: The Encoding Crisis (Arabic Text Support)
 The Problem: During the Python ingestion phase (SQLAlchemy), Arabic text was being corrupted or displayed as garbled characters (Mojibake).
-
 The Insight: I discovered that while utf8 is standard, MySQL’s utf8mb4_0900_ai_ci is the superior collation for modern Arabic support. SQLAlchemy's default often creates a mismatch.
-
 The Solution: I standardized the entire database and connection strings to utf8mb4, ensuring full data integrity for names and addresses in Arabic.
 
 Challenge B: Data Archeology & Normalization
