@@ -35,7 +35,7 @@
 
 3. Data Architecture (ERD)
 
-    ![Database ERD](./images/Screenshot-2026-01-26-112332.png.png)
+    ![Database ERD](./images/Screenshot-2026-01-26-112332.png)
 
 5. How to Use This Repository
 
